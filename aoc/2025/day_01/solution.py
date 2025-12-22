@@ -1,12 +1,11 @@
 from pathlib import Path
 from aoc.utils.parsing import read_lines
-import math
+
 
 def part1(puzzle_input):
     curr = 50
     times_at_zero = 0
     for rotation in puzzle_input:
-        prev = curr
         direction, amount = rotation[0], int(rotation[1:])
         if direction == "R":
             curr = (curr + amount) % 100
