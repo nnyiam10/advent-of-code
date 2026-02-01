@@ -22,3 +22,8 @@ def read_grid_from_file(filename: PathLike):
     path = Path(filename)
     with path.open() as f:
         return [[int(char) for char in line.strip()] for line in f]
+
+def read_text_grid_from_file(filename: PathLike):
+    path = Path(filename)
+    with path.open() as f:
+        return [[char for char in line.strip()] for line in f]
