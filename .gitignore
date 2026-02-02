@@ -176,4 +176,4 @@ cython_debug/
 # Mac
 *.DS_Store
 
-solutions/input.txt
+input.txt
