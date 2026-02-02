@@ -52,8 +52,6 @@ def part2(puzzle_input):
     return total
         
 
-
-
 def main():
     input_path = Path(__file__).parent / "input.txt"
     puzzle_input = read_text_grid_from_file(input_path)

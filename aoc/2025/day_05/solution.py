@@ -3,7 +3,6 @@ Advent of Code 2025
 --- Day 5: Cafeteria ---
 """
 
-from collections import defaultdict
 from pathlib import Path
 from aoc.utils.parsing import read_lines
 
