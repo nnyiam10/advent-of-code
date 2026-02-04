@@ -18,6 +18,7 @@ def part1(puzzle_input):
                 total += val
     return total
 
+
 def is_repeated(s):
     n = len(s)
     for d in range(1, n//2+1):

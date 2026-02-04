@@ -11,7 +11,6 @@ OPERATIONS = {
     '*': lambda x, y: x * y,
 }
 
-
 def part1(puzzle_input):
     nums = [int(num) for num in puzzle_input[0]]
     m, n = len(puzzle_input)-1, len(puzzle_input[0])

@@ -23,7 +23,6 @@ def part1(puzzle_input):
     return total
 
 
-
 def part2(puzzle_input):
     intervals = []
     for input in puzzle_input:

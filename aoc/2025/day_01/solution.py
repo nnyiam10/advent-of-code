@@ -6,7 +6,6 @@ Advent of Code 2025
 from pathlib import Path
 from aoc.utils.parsing import read_lines
 
-
 def part1(puzzle_input):
     curr = 50
     times_at_zero = 0
@@ -38,7 +37,6 @@ def part2(puzzle_input):
                     times_at_zero += 1 + (amount - curr) // 100
             curr = (curr - amount) % 100
     return times_at_zero
-
 
 
 def main():
