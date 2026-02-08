@@ -5,7 +5,6 @@ Advent of Code 2025
 
 from pathlib import Path
 from aoc.utils.parsing import read_lines
-import math
 
 def distance(point1, point2):
     x1, y1, z1 = point1
