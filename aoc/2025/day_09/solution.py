@@ -1,6 +1,5 @@
 from pathlib import Path
 from aoc.utils.parsing import read_lines
-from collections import defaultdict
 
 def part1(puzzle_input):
     n = len(puzzle_input)
@@ -11,6 +10,7 @@ def part1(puzzle_input):
             x2, y2 = [int(x) for x in puzzle_input[j].split(',')]
             max_area = max(max_area, (abs(x2-x1)+1)*(abs(y2-y1)+1))
     return max_area
+
 
 def intersects_with_boundary(x1, y1, x2, y2, boundary_edges):
     min_x, max_x = min(x1, x2), max(x1, x2)
