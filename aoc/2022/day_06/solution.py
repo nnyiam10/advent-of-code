@@ -1,4 +1,10 @@
-from utils import read_raw
+"""
+Advent of Code 2022
+--- Day 6: Tuning Trouble ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing import read_raw
 
 def parts(puzzle_input, part=1):
     seen = set()
@@ -18,7 +24,7 @@ def parts(puzzle_input, part=1):
             seen.add(puzzle_input[r])
 
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_raw(filename)
 
     print(parts(puzzle_input, 1))

@@ -1,4 +1,10 @@
-from utils import read_lines_raw
+"""
+Advent of Code 2022
+--- Day 5: Supply Stacks ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing import read_lines_raw
 
 def arrange_creates(puzzle_input):
     row_length = len(puzzle_input[0])
@@ -36,7 +42,7 @@ def part2(puzzle_input):
     return instructions(updated_input, crates, 2)
     
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines_raw(filename)
     
     print(part1(puzzle_input))

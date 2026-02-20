@@ -1,4 +1,10 @@
-from utils import read_lines
+"""
+Advent of Code 2022
+--- Day 2: Rock Paper Scissors ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing import read_lines
 
 def part1(puzzle_input):
     shape_score = {'X': 1, 'Y': 2, 'Z': 3}
@@ -19,7 +25,7 @@ def part2(puzzle_input):
     return sum(opposite_shape_score[opponent][you] + your_score[you] for opponent, you in map(str.split, puzzle_input))
 
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines(filename)
 
     print(part1(puzzle_input))

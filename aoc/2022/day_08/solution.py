@@ -1,4 +1,9 @@
-from utils import read_grid_from_file
+"""
+Advent of Code 2022
+--- Day 8: Treetop Tree House ---
+"""
+from pathlib import Path
+from aoc.utils.parsing import read_grid_from_file
 
 def part1(puzzle_input):
     rows, cols = len(puzzle_input), len(puzzle_input[0])
@@ -52,7 +57,7 @@ def part2(puzzle_input):
     return max_scenic_score
         
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_grid_from_file(filename)
     
     print(part1(puzzle_input))

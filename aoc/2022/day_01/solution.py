@@ -1,5 +1,11 @@
+"""
+Advent of Code 2022
+--- Day 1: Calorie Counting ---
+"""
+
+from pathlib import Path
 from heapq import nlargest
-from utils import read_lines
+from aoc.utils.parsing import read_lines
 
 def top_three(input):
     calorie_totals = []
@@ -17,7 +23,7 @@ def top_three(input):
     return nlargest(3, calorie_totals)
 
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines(filename)
 
     #Part 1

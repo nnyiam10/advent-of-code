@@ -1,4 +1,10 @@
-from utils import read_lines
+"""
+Advent of Code 2022
+--- Day 9: Rope Bridge ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing  import read_lines
 
 DIR_TO_TUPLE = {
     "U" : (0, 1),
@@ -36,7 +42,7 @@ def unique_positions(puzzle_input, n):
     return len(visited)
 
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines(filename)
 
     # Part 1

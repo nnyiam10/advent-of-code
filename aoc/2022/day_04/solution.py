@@ -1,4 +1,10 @@
-from utils import read_lines
+"""
+Advent of Code 2022
+--- Day 4: Camp Cleanup ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing import read_lines
 
 def part1(puzzle_input):
     contained = 0
@@ -18,7 +24,7 @@ def part2(puzzle_input):
     return overlap
 
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines(filename)
 
     print(part1(puzzle_input))

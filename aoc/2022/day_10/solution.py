@@ -1,4 +1,10 @@
-from utils import read_lines
+"""
+Advent of Code 2022
+--- Day 10: Cathode-Ray Tube ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing import read_lines
 
 def crt(puzzle_input, part=1):
     x = 1
@@ -48,7 +54,7 @@ def crt(puzzle_input, part=1):
 
            
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines(filename)
 
     # Part 1

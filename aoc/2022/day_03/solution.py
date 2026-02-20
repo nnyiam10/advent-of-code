@@ -1,4 +1,10 @@
-from utils import read_lines
+"""
+Advent of Code 2022
+--- Day 3: Rucksack Reorganization ---
+"""
+
+from pathlib import Path
+from aoc.utils.parsing import read_lines
 
 def priority(letter):
     return ord(letter) - 38 if letter.isupper() else ord(letter) - 96
@@ -22,7 +28,7 @@ def part2(puzzle_input):
     return total_priority
 
 def main():
-    filename = "solutions/input.txt"
+    filename = Path(__file__).parent / "input.txt"
     puzzle_input = read_lines(filename)
 
     print(part1(puzzle_input))
