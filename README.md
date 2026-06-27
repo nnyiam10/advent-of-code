@@ -4,6 +4,6 @@ This contains my solutions across multiple years of AoC. Mainly for my own pract
 | Year | Stars | Language | Status |
 |------|-------|----------|--------|
 | [2025](./aoc/2025) | ⭐ 21 | Python | In Progress |
-| 2024 | — | TypeScript | Planned |
-| 2023 | — | C++ | Planned |
+| 2024 | — | TBD | Planned |
+| 2023 | — | TBD | Planned |
 | [2022](./aoc/2022) | ⭐ 20 | Python | In Progress |
